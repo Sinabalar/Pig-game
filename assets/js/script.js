@@ -82,7 +82,7 @@ btnHold.addEventListener('click', function () {
     if (isPlaying) {
         mainScore[activePlayer] += currentScore;
         document.getElementById(`score--${activePlayer}`).textContent = mainScore[activePlayer]
-        if (mainScore[activePlayer] >= 20) {
+        if (mainScore[activePlayer] >= 100) {
             isPlaying = false;
             gameIsFinished();
         } else {
