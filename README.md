@@ -1,5 +1,5 @@
 # Pig-game
-simple pig game for fun
+simple pig game for fun.
 Hi...
 This is a simple pig game that I made with JavaScript
 you can play it with your friend 
