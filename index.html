@@ -6,11 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/queries.css" />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <title>Pig Game</title>
 </head>
 
 <body>
-  <main>
+  <main class="main">
     <section class="player player--0 player--active">
       <h2 class="name" id="name--0">Player 1</h2>
       <p class="score" id="score--0"></p>
@@ -29,11 +32,12 @@
     </section>
 
     <img src="assets/images/dice-5.png" alt="Playing dice" class="dice" />
-    <button class="btn btn--new">🔄 New game</button>
+    <button class="btn btn--new"><ion-icon name="refresh-outline" class="btn--new--icon"></ion-icon></button>
     <button class="btn btn--roll">🎲 Roll dice</button>
     <button class="btn btn--hold">📥 Hold</button>
   </main>
   <script src="assets/js/script.js"></script>
+  <script src="assets/js/responsive.js"></script>
 </body>
 
 </html>

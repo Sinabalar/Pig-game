@@ -24,7 +24,7 @@ body {
 }
 
 /* LAYOUT */
-main {
+.main {
   position: relative;
   width: 100rem;
   height: 60rem;
@@ -134,6 +134,12 @@ main {
 
 .btn--new {
   top: 4rem;
+  display: flex;
+  padding: 0.7rem 1.5rem;
+}
+
+.btn--new--icon {
+  font-size: 3rem;
 }
 
 .btn--new--finished--game {
