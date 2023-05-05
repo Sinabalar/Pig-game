@@ -5,16 +5,6 @@
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
-.phone--mode--body {
-    overflow: hidden;
-}
-
-.phone--mode--main {
-
-    flex-direction: column;
-    width: 59rem;
-    height: 86rem;
-}
 
 .btn--icon {
     color: #524b4d;
@@ -32,13 +22,69 @@
     top: 42.3rem;
 }
 
-.btn--new--phone {
-    left: 6%;
-    top: 0rem;
-}
 
 .dice--phone {
     height: 8rem;
     top: 40.5rem;
     box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.player--0--phone {
+    transform: translateY(1rem);
+}
+
+@media(max-width:44.12em) {
+    .btn--new {
+        top: 0rem;
+        left: 6%;
+    }
+
+    .score {
+        font-size: 3rem;
+    }
+
+    .main {
+        flex-direction: column;
+        width: 59rem;
+        height: 86rem;
+    }
+
+    body {
+        overflow: hidden;
+    }
+
+    .player--winner .name {
+        top: 6rem;
+    }
+
+    .player--winner .score {
+        top: 8rem;
+    }
+}
+
+@media(max-width:46em) {
+    .name {
+        font-size: 3rem;
+    }
+}
+
+
+
+@media(max-height:53.75em) {
+    .btn--new {
+        top: 0rem;
+    }
+}
+
+@media(max-height:53.5em) {
+    .btn--new {
+        top: 4rem;
+    }
+}
+
+@media(max-width:44em),
+(max-height:49.3) {
+    .btn--new {
+        top: 33rem;
+    }
 }

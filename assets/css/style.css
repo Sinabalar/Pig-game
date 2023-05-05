@@ -150,15 +150,12 @@ body {
   top: 39.3rem;
 }
 
-.btn--roll--finished--game {
-  transform: translate(-9rem, 22rem);
-}
 
 .btn--hold {
   top: 46.1rem;
 }
 
-.btn--hold--finished--game {
+.btn--finished--game {
   transform: translate(-9rem, 22rem);
 }
 

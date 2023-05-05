@@ -31,8 +31,8 @@ const init = function () {
     player1El.classList.remove('player--active')
     player0El.classList.remove('player--winner');
     player1El.classList.remove('player--winner');
-    btnRoll.classList.remove('hidden', 'btn--roll--finished--game');
-    btnHold.classList.remove('hidden', 'btn--hold--finished--game');
+    btnRoll.classList.remove('hidden', 'btn--finished--game');
+    btnHold.classList.remove('hidden', 'btn--finished--game');
     btnNew.classList.remove('btn--new--finished--game');
     dice.classList.add('hidden');
 
@@ -51,8 +51,8 @@ const swichPlayer = function () {
 };
 
 const gameIsFinished = function () {
-    btnRoll.classList.add('btn--roll--finished--game');
-    btnHold.classList.add('btn--hold--finished--game');
+    btnRoll.classList.add('btn--finished--game', 'hidden');
+    btnHold.classList.add('btn--finished--game', 'hidden');
     btnNew.classList.add('btn--new--finished--game');
     dice.classList.add('hidden');
     document.querySelector(`.player--${activePlayer}`).classList.add('player--winner');
@@ -82,7 +82,7 @@ btnHold.addEventListener('click', function () {
     if (isPlaying) {
         mainScore[activePlayer] += currentScore;
         document.getElementById(`score--${activePlayer}`).textContent = mainScore[activePlayer]
-        if (mainScore[activePlayer] >= 100) {
+        if (mainScore[activePlayer] >= 20) {
             isPlaying = false;
             gameIsFinished();
         } else {
