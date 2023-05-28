@@ -35,7 +35,7 @@
 
 @media(max-width:44.12em) {
     .btn--new {
-        top: 0rem;
+        top: 35rem;
         left: 6%;
     }
 
@@ -60,31 +60,31 @@
     .player--winner .score {
         top: 8rem;
     }
+
+
+
 }
 
-@media(max-width:46em) {
+@media(max-height:42.56em) and (max-width:44.12em) {
     .name {
-        font-size: 3rem;
+        font-size: 2rem;
+        margin-bottom: 0;
     }
-}
 
-
-
-@media(max-height:53.75em) {
-    .btn--new {
-        top: 0rem;
+    .player {
+        padding: 10rem;
     }
-}
 
-@media(max-height:53.5em) {
-    .btn--new {
-        top: 4rem;
+    .player--0 {
+        padding: 17rem 10rem 5rem 10rem;
     }
-}
 
-@media(max-width:44em),
-(max-height:49.3) {
-    .btn--new {
-        top: 33rem;
+    .player--1 {
+        padding: 8rem 10rem 15rem 10rem;
+    }
+
+    .dice--phone {
+        height: 7rem;
+
     }
 }
