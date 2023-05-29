@@ -70,27 +70,21 @@ btnRoll.addEventListener('click', function () {
         switch (randomNum) {
             case 1:
                 diceNum = randomRangeNum(6, 1);
-                console.log(1);
                 break;
             case 2:
                 diceNum = randomRangeNum(2, 1);
-                console.log(2);
                 break;
             case 3:
                 diceNum = randomRangeNum(3, 1);
-                console.log(3);
                 break;
             case 4:
                 diceNum = randomRangeNum(4, 1);
-                console.log(4);
                 break;
             case 5:
                 diceNum = randomRangeNum(5, 1);
-                console.log(5);
                 break;
             case 6:
                 diceNum = randomRangeNum(6, 1);
-                console.log(6);
                 break;
         }
         dice.classList.remove('hidden');
