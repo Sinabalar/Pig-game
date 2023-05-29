@@ -40,6 +40,9 @@ const init = function () {
 init();
 //dice rolling algoritm
 
+const randomRangeNum = function (max = 6, min = 1) {
+    return Math.trunc(Math.random() * (max - min + 1)) + min;
+}
 
 const swichPlayer = function () {
     currentScore = 0;
@@ -62,11 +65,36 @@ const gameIsFinished = function () {
 
 btnRoll.addEventListener('click', function () {
     if (isPlaying) {
-        const diceNum = Math.trunc(Math.random() * 6) + 1;
-
+        const randomNum = Math.trunc(Math.random() * 6) + 1;
+        let diceNum = randomRangeNum();
+        switch (randomNum) {
+            case 1:
+                diceNum = randomRangeNum(6, 1);
+                console.log(1);
+                break;
+            case 2:
+                diceNum = randomRangeNum(2, 1);
+                console.log(2);
+                break;
+            case 3:
+                diceNum = randomRangeNum(3, 1);
+                console.log(3);
+                break;
+            case 4:
+                diceNum = randomRangeNum(4, 1);
+                console.log(4);
+                break;
+            case 5:
+                diceNum = randomRangeNum(5, 1);
+                console.log(5);
+                break;
+            case 6:
+                diceNum = randomRangeNum(6, 1);
+                console.log(6);
+                break;
+        }
         dice.classList.remove('hidden');
         dice.classList.remove('dice--player--changed');
-
         dice.src = `assets/images/dice-${diceNum}.png`;
 
         if (diceNum !== 1) {
